@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampu</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="flex  justify-center items-center min-h-screen w-full
+    bg-gray-500  gap-4">
+
+    
+
+        <!-- lampu-1 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="assets/images/off.gif" alt="" id="lampu1">
+            <button onclick="saklar('on' , 1)"class="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+                href="#">MENYALAKAN LAMPU</button> 
+            <button onclick="saklar('off' , 1)" class="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
+                href="#" >MATIKAN LAMPU</button>
+        </div>
+
+        <!-- lampu-2 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="assets/images/off.gif" alt="" id="lampu2">
+            <button onclick="saklar('on' , 2)" class="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+            href="#">MENYALAKAN LAMPU</button>  
+            <button onclick="saklar('off' , 2)" class="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
+            href="#">MATIKAN LAMPU</button>
+        </div>
+
+        <!-- lampu-3 -->
+        <div class="flex flex-col gap-2 items-center">
+            <img src="assets/images/off.gif" alt="" id="lampu3">
+            <button onclick="saklar('on', 3)" class="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+            href="#">MENYALAKAN LAMPU</button>  
+            <button onclick="saklar('off', 3)" class="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
+            href="#">MATIKAN LAMPU</button>
+        </div>
+    </div>
+
+
+    <!-- script js -->
+    <script src="saklar.js" type="application/javascript">
+    </script>
+    <!-- script js -->
+
+
+</body>
+</html>
